@@ -84,4 +84,22 @@ public class MainActivityTest {
         // You can also use anything() in place of is(instanceOf(String.class))
         onData(is(instanceOf(String.class))).inAdapterView(withId(R.id.city_list)).atPosition(0).check(matches((withText("Edmonton"))));
     }
+
+    @Test
+    public void testActivitySwitchAndBackButton() {
+        onView(withId(R.id.button_add)).perform(click());
+        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Edmonton"));
+        onView(withId(R.id.button_confirm)).perform(click());
+
+        onData(is(instanceOf(String.class))).inAdapterView(withId(R.id.city_list)).atPosition(0).perform(click());
+
+        onView(withId(R.id.button_back)).check(matches(isDisplayed()));
+
+        onView(withText("Edmonton")).check(matches(isDisplayed()));
+
+        onView(withId(R.id.button_back)).perform(click());
+
+        onView(withId(R.id.button_add)).check(matches(isDisplayed()));
+        onView(withText("Edmonton")).check(matches(isDisplayed()));
+    }
 }
