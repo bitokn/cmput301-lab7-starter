@@ -1,0 +1,7 @@
+Test Results:
+Medium_Phone_API_36.0(AVD) - 16 Tests 0/4 completed. (0 skipped) (0 failed)
+Medium_Phone_API_36.0(AVD) - 16 Tests 1/4 completed. (0 skipped) (0 failed)
+Medium_Phone_API_36.0(AVD) - 16 Tests 2/4 completed. (0 skipped) (0 failed)
+Medium_Phone_API_36.0(AVD) - 16 Tests 3/4 completed. (0 skipped) (0 failed)
+Medium_Phone_API_36.0(AVD) - 16 Tests 4/4 completed. (0 skipped) (0 failed)
+Finished 4 tests on Medium_Phone_API_36.0(AVD) - 16
